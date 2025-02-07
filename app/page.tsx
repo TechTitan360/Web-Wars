@@ -7,6 +7,8 @@ import Registration from "@/components/Registration"
 import Sponsors from "@/components/Sponsors"
 import FAQ from "@/components/FAQ"
 import Contact from "@/components/Contact"
+// import { Carousel } from "@/components/ui/carousel"
+import { CarouselDemo } from "@/components/Carousel"
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
       <Navbar />
       <ICCSAIHero />
       <About />
+      <CarouselDemo/>
       <ConferenceDetails />
       <Speakers />
       <Registration />
@@ -21,7 +24,7 @@ export default function Home() {
       <FAQ />
       <Contact />
       <footer className="bg-black text-white text-center py-4">
-        <p>Powered by IEEE Computer Society</p>
+        <p>Powered by ShadowDEV🥷🏻</p>
         <p>Join us at ICCSAI 2025 and be part of the future of AI, Security, and Communication. 🚀</p>
       </footer>
     </main>

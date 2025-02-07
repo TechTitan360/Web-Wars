@@ -151,7 +151,7 @@ export default function ICCSAIHero() {
             animate="visible"
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
           >
-            <Image src="/ieee-cs-logo.svg" alt="IEEE Computer Society" width={24} height={24} />
+            {/* <Image src="/ieee-cs-logo.svg" alt="IEEE Computer Society" width={24} height={24} /> */}
             <span className="text-sm text-white/60 tracking-wide">Powered by IEEE Computer Society</span>
           </motion.div>
 
@@ -187,13 +187,15 @@ export default function ICCSAIHero() {
           >
             <a
               href="#about"
-              className="px-6 py-3 rounded-full bg-blue-500 text-white font-semibold hover:bg-blue-600 transition-colors"
+              className="px-6 py-3 rounded-3xl bg-cyan-300 text-emerald-100 font-semibold transition-all duration-200 shadow-[inset_20px_20px_30px_#234d91,inset_-20px_-20px_30px_#53b7ff]"
             >
               Learn More
             </a>
+
+
             <a
               href="#register"
-              className="px-6 py-3 rounded-full bg-purple-500 text-white font-semibold hover:bg-purple-600 transition-colors"
+              className="px-6 py-3 rounded-3xl bg-purple-300 text-pink-100 font-semibold transition-all duration-200 shadow-[inset_20px_20px_30px_#633292,inset_-20px_-20px_30px_#ed78ff]"
             >
               Register Now
             </a>

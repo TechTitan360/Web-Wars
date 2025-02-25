@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaCalendarAlt, FaMapMarkerAlt, FaLaptop, FaCheckCircle } from "react-icons/fa";
@@ -11,8 +12,14 @@ export default function ConferenceDetails() {
   const [hoveredTopic, setHoveredTopic] = useState(null);
 
   return (
-    <section id="details" className="py-20 bg-black text-white">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+    <section
+      id="details"
+      className="py-20 text-white bg-gradient-to-b from-[#0F1419] to-[#0A1016]"
+    >
+      {/* Subtle Overlay Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-700/[0.04] to-purple-700/[0.04] blur-3xl" />
+
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 relative z-10">
         <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-6 text-center">
           Conference Details
         </h2>
@@ -21,7 +28,7 @@ export default function ConferenceDetails() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gray-900 rounded-2xl p-10 shadow-lg relative"
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gradient-to-b from-[#0F1419]/90 to-[#0A1016]/90 rounded-2xl p-10 shadow-lg"
         >
           {/* Left Section: Event Info */}
           <motion.div
@@ -44,7 +51,7 @@ export default function ConferenceDetails() {
                 </div>
               ))}
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 mt-6">
               <CountdownTimer targetDate={targetDate} />
             </div>
           </motion.div>

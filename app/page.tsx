@@ -1,19 +1,23 @@
-import ICCSAIHero from "@/components/ICCSAIHero";
+"use client"
+
+import { motion, useScroll } from "framer-motion"
 import Navbar from "@/components/Navbar";
-import About from "@/components/About";
+import Home2 from "@/components/home";
+// import ICCSAIHero from "@/components/ICCSAIHero";
+// import About from "@/components/About";
 import ConferenceDetails from "@/components/ConferenceDetails";
 import Registration from "@/components/Registration";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import { CarouselDemo } from "@/components/Carousel";
-import HomePage from "./HomePage";
 
-export default function Home() {
+export default function Home(){
+  const { scrollYProgress } = useScroll()
   return (
     <main className="min-h-screen bg-gray-900">
       <Navbar />
-      <HomePage />
-      {/* <ICCSAIHero />
+      <Home2 />
+      {/* <ICCSAIHero scrollYProgress={scrollYProgress} />
       <About /> */}
       <CarouselDemo />
       <ConferenceDetails />

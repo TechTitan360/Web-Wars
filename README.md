@@ -1,35 +1,33 @@
 # Web-Wars
-Made for participating in Web-Wars IEEE 
+Made for participating in Web-Wars IEEE
 
+## Project Details
 
-Project Name : Web Wars
-Team Name : Shadow Dev
-Team Leader: Aditya Bhardwaj
-Team Members: N/A
-Project Description : This is the Project made for participating in Web Wars.
-
-
-Here’s a clean and professional **Setup Instructions** section for your Web Wars project README:  
+- **Project Name:** Web Wars  
+- **Team Name:** Shadow Dev  
+- **Team Leader:** Aditya Bhardwaj  
+- **Team Members:** N/A  
+- **Project Description:** This project is developed for participation in the Web Wars competition organized by IEEE.
 
 ---
 
-### 🚀 Setup Instructions  
+## 🚀 Setup Instructions  
 
 Follow these steps to set up and run the Web Wars project locally:  
 
-#### **Prerequisites**  
+### **Prerequisites**  
 Ensure you have the following installed:  
 - **Node.js** (LTS version recommended) - [Download here](https://nodejs.org/)  
 - **Git** - [Download here](https://git-scm.com/)  
 - **PNPM / Yarn / NPM** (Choose one package manager)  
 
-#### **1️⃣ Clone the Repository**  
+### **1️⃣ Clone the Repository**  
 ```sh
 git clone https://github.com/TechTitan360/WebWars.git
 cd WebWars
 ```
 
-#### **2️⃣ Install Dependencies**  
+### **2️⃣ Install Dependencies**  
 Using **pnpm** (recommended):  
 ```sh
 pnpm install
@@ -43,7 +41,7 @@ Or with **npm**:
 npm install
 ```
 
-#### **3️⃣ Start the Development Server**  
+### **3️⃣ Start the Development Server**  
 ```sh
 pnpm dev
 ```
@@ -56,7 +54,7 @@ Or
 npm run dev
 ```
 
-#### **4️⃣ Build for Production**  
+### **4️⃣ Build for Production**  
 ```sh
 pnpm build
 ```
@@ -69,7 +67,7 @@ Or
 npm run build
 ```
 
-#### **5️⃣ Running the Production Build**  
+### **5️⃣ Running the Production Build**  
 ```sh
 pnpm start
 ```
@@ -82,10 +80,10 @@ Or
 npm run start
 ```
 
-#### **6️⃣ Environment Variables (Optional)**  
+### **6️⃣ Environment Variables (Optional)**  
 Create a `.env.local` file in the root directory and add necessary API keys and configuration variables.  
 
-#### **7️⃣ Linting & Formatting (Optional, but recommended)**  
+### **7️⃣ Linting & Formatting (Optional, but recommended)**  
 To check linting issues:  
 ```sh
 pnpm lint
@@ -97,13 +95,14 @@ pnpm format
 
 ---
 
+## 🌍 Live Deployment  
+
+The project is deployed and can be accessed at:  
+**[Live Deployment Link](https://techtitan360.github.io/Web-Wars/)**  
+
+![Project Preview](https://github.com/user-attachments/assets/328627f9-d918-4230-beda-4606a53ef6c9)
 
 
-
-Live Deployment Link : (https://techtitan360.github.io/Web-Wars/)
-
-
-![image](https://github.com/user-attachments/assets/328627f9-d918-4230-beda-4606a53ef6c9)
 
 
 

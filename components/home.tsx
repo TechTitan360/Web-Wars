@@ -11,7 +11,7 @@ export default function Home2() {
   const shapeOpacity = useTransform(scrollY, [0, 1000, 2000], [1, 0.3, 1]) // Fade out then back in
 
   return (
-    <main className="bg-[#030303] relative overflow-hidden">
+    <main className="bg-transparent relative overflow-hidden">
       {/* Single Parallax Layer for Both Sections */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <motion.div style={{ y: shapeY, opacity: shapeOpacity }}>

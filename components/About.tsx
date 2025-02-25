@@ -123,6 +123,11 @@ export default function About() {
               className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 p-1 rounded-lg shadow-xl"
             >
               <img
+                src="/maclab.png"
+                alt="ICCSAI Conference"
+                className="rounded-lg w-full h-auto"
+              />
+              <img
                 src="/cover.png"
                 alt="ICCSAI Conference"
                 className="rounded-lg w-full h-auto"

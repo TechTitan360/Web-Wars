@@ -7,55 +7,55 @@ const keynoteSpeakers = [
     name: "Prof. (Dr.) S.N. Singh",
     position: "Director",
     affiliation: "IIITM Gwalior, India",
-    imageUrl: "/path/to/sn-singh.jpg", // Placeholder, replace with actual path
+    imageUrl: "/snsingh.jpeg", // Placeholder, replace with actual path
   },
   {
     name: "Dr. Yogesh S. Chauhan",
     position: "Professor",
     affiliation: "IIT Kanpur, India",
-    imageUrl: "/path/to/yogesh-chauhan.jpg", // Placeholder
+    imageUrl: "/yogesh1.png", // Placeholder
   },
   {
     name: "Prof. J. Ramkumar",
     position: "Dean (Planning)",
     affiliation: "IIT Kanpur, India",
-    imageUrl: "/path/to/j-ramkumar.jpg", // Placeholder
+    imageUrl: "/jramkumar.jpg", // Placeholder
   },
   {
     name: "Dr. Liudong Xing",
     position: "Professor",
     affiliation: "University of Massachusetts, Dartmouth",
-    imageUrl: "/path/to/liudong-xing.jpg", // Placeholder
+    imageUrl: "/Liudong1.png", // Placeholder
   },
   {
     name: "Ts. Dr. Nurfadhlina Mohd Sharef",
     position: "Associate Professor",
     affiliation: "UKM, Malaysia",
-    imageUrl: "/path/to/nurfadhlina-sharef.jpg", // Placeholder
+    imageUrl: "/nurfa.png", // Placeholder
   },
   {
     name: "Dr. Ahmed A. Elngar",
     position: "Associate Professor",
     affiliation: "Beni-Suef University, Egypt",
-    imageUrl: "/path/to/ahmed-elngar.jpg", // Placeholder
+    imageUrl: "/elngar1.png", // Placeholder
   },
   {
     name: "Prof. Ts. Dr. Murali Raman",
     position: "Deputy Vice Chancellor",
     affiliation: "Asia Pacific University, Malaysia",
-    imageUrl: "/path/to/murali-raman.jpg", // Placeholder
+    imageUrl: "/MuraliRaman.png", // Placeholder
   },
   {
     name: "Dr. Rajeev Srivastava",
     position: "Professor",
     affiliation: "IIT BHU, Varanasi, India",
-    imageUrl: "/path/to/rajeev-srivastava.jpg", // Placeholder
+    imageUrl: "/image.png", // Placeholder
   },
   {
     name: "Dr. Asheesh Kumar Singh",
     position: "Professor",
     affiliation: "MNNIT Allahabad, India",
-    imageUrl: "/path/to/asheesh-singh.jpg", // Placeholder
+    imageUrl: "/asheeshksingh.png", // Placeholder
   },
 ];
 

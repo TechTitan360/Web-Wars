@@ -67,7 +67,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
       <li
         ref={slideRef}
-        className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10 "
+        className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10"
         onClick={() => handleSlideClick(index)}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
@@ -100,9 +100,13 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             loading="eager"
             decoding="sync"
           />
-          {current === index && (
-            <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
-          )}
+          {/* Updated overlay with transparency control */}
+          <div
+            className="absolute inset-0 bg-black/30 transition-opacity duration-500 ease-in-out"
+            style={{
+              opacity: current === index ? 1 : 0, // Transparent when inactive
+            }}
+          />
         </div>
 
         <article
@@ -110,11 +114,10 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
             current === index ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
-          <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold  relative">
+          <h2 className="text-lg md:text-2xl lg:text-4xl font-semibold relative">
             {title}
           </h2>
-          <div className="flex justify-center">
-          </div>
+          <div className="flex justify-center"></div>
         </article>
       </li>
     </div>
@@ -172,7 +175,7 @@ export function Carousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative w-[70vmin] h-[70vmin] mx-auto bg-black"
+      className="relative w-[70vmin] h-[70vmin] mx-auto bg-transparent"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul

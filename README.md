@@ -98,7 +98,7 @@ pnpm format
 ## 🌍 Live Deployment  
 
 The project is deployed and can be accessed at:  
-**[Live Deployment Link](https://techtitan360.github.io/Web-Wars/)**  
+**[View Live Project]([https://techtitan360.github.io/Web-Wars/](https://techtitan360.github.io/WebWars25_ShadowDev/))**  
 
 ![Project Preview](https://github.com/user-attachments/assets/328627f9-d918-4230-beda-4606a53ef6c9)
 

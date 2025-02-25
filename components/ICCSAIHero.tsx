@@ -25,22 +25,23 @@ export default function ICCSAIHero({ scrollYProgress }: ICCSAIHeroProps) {
     }),
   }
 
-  // Debug: Log scrollYProgress to confirm it’s updating
-  scrollYProgress?.onChange((value: number) => console.log("Hero scrollYProgress:", value))
-
-  // Parallax effect: Smooth movement over full scroll
   const shapeY = scrollYProgress
-    ? useTransform(scrollYProgress, [0, 1], [0, 300]) // Move 300px over full scroll
+    ? useTransform(scrollYProgress, [0, 1], [0, 300])
     : 0
   const shapeOpacity = scrollYProgress
-    ? useTransform(scrollYProgress, [0, 1], [1, 0.5]) // Fade to 50% opacity over full scroll
+    ? useTransform(scrollYProgress, [0, 1], [1, 0.3])
+    : 1
+  const contentOpacity = scrollYProgress
+    ? useTransform(scrollYProgress, [0, 0.7], [1, 0])
     : 1
 
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.05] via-transparent to-purple-500/[0.05] blur-3xl" />
+    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0F172A] to-[#1E2A44]">
+      {/* Refined Background Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.08] via-transparent to-purple-500/[0.08] blur-3xl" />
 
-      <div className="absolute inset-0 overflow-hidden">
+      {/* Parallax Shapes */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <motion.div style={{ y: shapeY, opacity: shapeOpacity }}>
           <ElegantShape
             delay={0.3}
@@ -85,7 +86,11 @@ export default function ICCSAIHero({ scrollYProgress }: ICCSAIHeroProps) {
         </motion.div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 md:px-6">
+      {/* Hero Content */}
+      <motion.div
+        style={{ opacity: contentOpacity }}
+        className="relative z-10 container mx-auto px-4 md:px-6"
+      >
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             custom={0}
@@ -141,9 +146,10 @@ export default function ICCSAIHero({ scrollYProgress }: ICCSAIHeroProps) {
             </a>
           </motion.div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none" />
+      {/* Adjusted Transition Gradient */}
+      <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#1E2A44] to-transparent pointer-events-none" />
     </div>
   )
 }

@@ -76,7 +76,7 @@ export default function Navbar() {
                 className="text-white text-sm relative flex items-center"
               >
                 <span className="relative z-10 px-2 py-2 inline-block hover:text-blue-300 transition-colors">
-                  Committee
+                  Commitee
                   <ChevronDown className="inline-block ml-1 w-4 h-4" />
                 </span>
               </button>
@@ -93,12 +93,12 @@ export default function Navbar() {
                   >
                     <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                       <Link
-                        href="/committee"
+                        href="/commitee"
                         className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white transition-colors"
                         role="menuitem"
                         onClick={() => setDropdownOpen(false)}
                       >
-                        Committee
+                        Commitee
                       </Link>
                       <Link
                         href="/speakers"
@@ -166,7 +166,7 @@ export default function Navbar() {
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
                 >
-                  <span>Committee</span>
+                  <span>Commitee</span>
                   <ChevronDown className={`w-4 h-4 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
                 </button>
                 <AnimatePresence>
@@ -179,11 +179,11 @@ export default function Navbar() {
                       className="pl-4"
                     >
                       <Link
-                        href="/committee"
+                        href="/Commitee"
                         className="block px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white"
-                        onClick={() => handleNavClick("committee")}
+                        onClick={() => handleNavClick("commitee")}
                       >
-                        Committee
+                        Commitee
                       </Link>
                       <Link
                         href="/speakers"

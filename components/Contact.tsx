@@ -5,7 +5,7 @@ import { Mail, MapPin, Phone } from "lucide-react"
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-900 relative overflow-hidden">
+    <section id="contact" className="py-20 bg-[#070C12] relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.03] via-transparent to-purple-500/[0.03]" />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -22,7 +22,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8 shadow-xl max-w-3xl mx-auto"
+          className="bg-gradient-to-r from-blue-600 to-purple-600 backdrop-blur-lg rounded-lg p-8 shadow-xl max-w-3xl mx-auto border border-gray-800"
         >
           <p className="text-xl text-gray-300 mb-8 text-center">
             For inquiries, sponsorship opportunities, or speaker submissions, reach out to us:
@@ -60,4 +60,3 @@ export default function Contact() {
     </section>
   )
 }
-

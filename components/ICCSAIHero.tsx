@@ -17,13 +17,14 @@ interface ICCSAIHeroProps {
 
 export default function ICCSAIHero({ scrollYProgress }: ICCSAIHeroProps) {
   const fadeUpVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (i: number) => ({
+    hidden: { opacity: 0, y: 40, rotateX: -15 },
+    visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 1, delay: 0.5 + i * 0.2, ease: [0.25, 0.4, 0.25, 1] },
-    }),
-  }
+      rotateX: 0,
+      transition: { duration: 0.7, ease: "easeOut", type: "spring", stiffness: 80 },
+    },
+  };
 
   const shapeY = scrollYProgress
     ? useTransform(scrollYProgress, [0, 1], [0, 300])
@@ -132,15 +133,26 @@ export default function ICCSAIHero({ scrollYProgress }: ICCSAIHeroProps) {
             animate="visible"
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
+            {/* Learn More Button */}
             <a
               href="#about"
-              className="px-6 py-3 rounded-3xl bg-cyan-300 text-emerald-950 font-semibold transition-all duration-200 shadow-[inset_20px_20px_30px_#234d91,inset_-20px_-20px_30px_#53b7ff]"
+              className="px-6 py-3 rounded-3xl bg-gradient-to-br from-cyan-500 to-teal-400 
+          text-white font-semibold shadow-[0_3px_10px_rgba(0,255,255,0.2)] 
+          hover:shadow-[0_4px_15px_rgba(0,255,255,0.3)] 
+          hover:scale-105 hover:-translate-y-1 
+          transition-all duration-300 ease-in-out border border-cyan-400/30"
             >
               Learn More
             </a>
+
+            {/* Register Now Button */}
             <a
               href="#register"
-              className="px-6 py-3 rounded-3xl bg-purple-300 text-pink-950 font-semibold transition-all duration-200 shadow-[inset_20px_20px_30px_#633292,inset_-20px_-20px_30px_#ed78ff]"
+              className="px-6 py-3 rounded-3xl bg-gradient-to-br from-purple-500 to-pink-400 
+          text-white font-semibold shadow-[0_3px_10px_rgba(255,0,255,0.2)] 
+          hover:shadow-[0_4px_15px_rgba(255,0,255,0.3)] 
+          hover:scale-105 hover:-translate-y-1 
+          transition-all duration-300 ease-in-out border border-purple-400/30"
             >
               Register Now
             </a>

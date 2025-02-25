@@ -9,7 +9,7 @@ import topics from "@/data/conference-topics";
 const targetDate = new Date("2025-04-03T23:59:59");
 
 export default function ConferenceDetails() {
-  const [hoveredTopic, setHoveredTopic] = useState(null);
+  const [hoveredTopic, setHoveredTopic] = useState<string | null>(null);
 
   return (
     <section

@@ -5,7 +5,7 @@ Made for participating in Web-Wars IEEE
 
 - **Project Name:** Web Wars  
 - **Team Name:** Shadow Dev  
-- **Team Leader:** Aditya Bhardwaj  
+- **Team Leader:** Aditya Bhardwaj 
 - **Team Members:** N/A  
 - **Project Description:** This project is developed for participation in the Web Wars competition organized by IEEE.
 
@@ -98,7 +98,7 @@ pnpm format
 ## 🌍 Live Deployment  
 
 The project is deployed and can be accessed at:  
-**[View Live Project](https://techtitan360.github.io/WebWars25_ShadowDev/)**  
+**[View Live Project](https://web-wars25-shadow-dev.vercel.app/)**  
 
 ![Project Preview](https://github.com/user-attachments/assets/328627f9-d918-4230-beda-4606a53ef6c9)
 
